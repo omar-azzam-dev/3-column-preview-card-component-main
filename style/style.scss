@@ -1,0 +1,80 @@
+@import "variables";
+
+html {
+    font-family: $font-family-1;
+    font-size: $main-font-size;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-5;
+}
+main {
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+main section {
+    padding: 40px 60px 40px 40px;
+}
+
+main section:nth-of-type(1) {
+    background-color: $color-1;
+    color: $color-1;
+    border-radius: $main-border-radius 0px 0px $main-border-radius;
+}
+main section:nth-of-type(2) {
+    background-color: $color-2;
+    color: $color-2;
+}
+main section:nth-of-type(3) {
+    background-color: $color-3;
+    color: $color-3;
+    border-radius: 0px $main-border-radius $main-border-radius 0px;
+}
+
+main section h2 {
+    font-family: $font-family-2;
+    text-transform: uppercase;
+    color: $color-5;
+    margin: 20px 0;
+    font-size: 2.6rem;
+}
+main section p {
+    color: $color-4;
+}
+main section a {
+    background-color: transparent;
+    padding: 10px 30px;
+    display: block;
+    width: fit-content;
+    margin-top: 100px;
+    color: inherit;
+    background-color: $color-5;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 2px solid $color-5;
+    &:hover {
+        color: $color-5;
+        background-color: transparent;
+    }
+}
+footer {
+    margin: 20px 0;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.596);
+}
+footer a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    &:hover {
+        color: black;
+    }
+    &:active {
+        text-decoration: none;
+        color: black;
+    }
+}
